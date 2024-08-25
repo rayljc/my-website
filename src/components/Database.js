@@ -3,7 +3,7 @@ import React from 'react';
 const Database = () => {
   return (
     <div>
-      <h2>Database</h2>
+      <h2>Tandem Repeats Database</h2>
       
       {/* First 5x3 Table (No Borders) */}
       <table style={styles.noBorderTable}>
