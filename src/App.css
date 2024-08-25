@@ -1,5 +1,5 @@
 nav {
-  background-color: #282c34;
+  background-color: #e6dd7b;
   padding: 1rem;
 }
 
@@ -16,13 +16,12 @@ li {
 }
 
 a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
 }
 
 a:hover {
-  color: #61dafb;
+  text-decoration: underline; /* Underline on hover */
 }
 
 div {
