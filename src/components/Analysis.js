@@ -51,11 +51,9 @@ const Analysis = () => {
           <h2>Analysis Report</h2>
           <p><strong>File:</strong> {report.fileName}</p>
           <p><strong>Analysis Summary:</strong></p>
-          <ul>
-            {report.findings.map((finding, index) => (
-              <li key={index}>{finding}</li>
-            ))}
-          </ul>
+          {report.findings.map((finding, index) => (
+            <p key={index} style={{ textIndent: '20px' }}>{finding}</p>
+          ))}
           <p><strong>Conclusion:</strong> {report.conclusion}</p>
         </div>
       )}
