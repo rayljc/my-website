@@ -1,24 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import About from './components/About';
+import Analysis from './components/Analysis';
+import Guidance from './components/Guidance';
+import Database from './components/Database';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">About</Link>
+            </li>
+            <li>
+              <Link to="/analysis">Analysis</Link>
+            </li>
+            <li>
+              <Link to="/guidance">Guidance</Link>
+            </li>
+            <li>
+              <Link to="/database">Database</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* Define Routes */}
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/analysis" element={<Analysis />} />
+          <Route path="/guidance" element={<Guidance />} />
+          <Route path="/database" element={<Database />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
