@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import phoneIcon from '../assets/phone.png';
 import emailIcon from '../assets/email.png';
 import githubIcon from '../assets/github.png';
 import addressIcon from '../assets/address.png';
@@ -55,15 +54,9 @@ const Contact = () => {
            {/* Icons Row */}
       <div style={styles.container}>
         <div style={styles.item}>
-          <img src={phoneIcon} alt="Phone" style={styles.image} />
-          <p>
-            <a href="tel:+1234567890" style={styles.link}>Phone</a>
-          </p>
-        </div>
-        <div style={styles.item}>
           <img src={emailIcon} alt="Email" style={styles.image} />
           <p>
-            <a href="mailto:example@example.com" style={styles.link}>Email</a>
+            <a href="mailto:hsinlun@med.umich.edu" style={styles.link}>Email</a>
           </p>
         </div>
         <div style={styles.item}>
@@ -83,7 +76,7 @@ const Contact = () => {
           <img src={addressIcon} alt="Address" style={styles.image} />
           <p>
             <a
-              href="https://www.google.com/maps/place/Your+Address"
+              href="https://maps.app.goo.gl/F619vJNMjYvfqrHC6"
               target="_blank"
               rel="noopener noreferrer"
               style={styles.link}
